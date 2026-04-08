@@ -1,0 +1,10 @@
+#include<stdio.h>
+
+int main(){
+    printf("Grammar:\n");
+    printf("E -> E+E | E*E | id\n");
+
+    printf("\nThis grammar is ambiguous\n");
+    printf("Example: id+id*id\n");
+    printf("Two parse trees possible\n");
+}
