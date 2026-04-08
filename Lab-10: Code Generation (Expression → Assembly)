@@ -1,0 +1,10 @@
+#include<stdio.h>
+
+int main(){
+    printf("Expression: a=b+c\n");
+
+    printf("\nGenerated Assembly Code:\n");
+    printf("MOV R1, b\n");
+    printf("ADD R1, c\n");
+    printf("MOV a, R1\n");
+}
