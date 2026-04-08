@@ -1,0 +1,12 @@
+#include<stdio.h>
+
+int main(){
+    printf("Input:\n");
+    printf("a=b+c\n");
+    printf("d=b+c\n");
+
+    printf("\nAfter DAG Optimization:\n");
+    printf("t1=b+c\n");
+    printf("a=t1\n");
+    printf("d=t1\n");
+}
