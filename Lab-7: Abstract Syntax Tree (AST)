@@ -1,0 +1,11 @@
+#include<stdio.h>
+
+int main(){
+    printf("Expression: a+b*c\n");
+
+    printf("\nAbstract Syntax Tree:\n");
+    printf("      +\n");
+    printf("     / \\\n");
+    printf("    a   *\n");
+    printf("       / \\\n");
+    printf("      b   c\n");
