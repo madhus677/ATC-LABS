@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <ctype.h>
+
+int main(){
+    char str[50];
+    int i=0,flag=1;
+
+    printf("Enter identifier: ");
+    scanf("%s",str);
+
+    if(!(isalpha(str[0])||str[0]=='_'))
+        flag=0;
+
+    while(str[i]!='\0'){
+        if(!(isalnum(str[i])||str[i]=='_')){
+            flag=0;
+            break;
+        }
+        i++;
+    }
+
+    if(flag)
+        printf("Valid Identifier");
+    else
+        printf("Invalid Identifier");
+}
