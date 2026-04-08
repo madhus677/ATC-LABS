@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    char code[500];
+    int i=0;
+
+    printf("Enter code:\n");
+    fgets(code,500,stdin);
+
+    while(code[i]!='\0'){
+        if(code[i]=='/' && code[i+1]=='/'){
+            while(code[i]!='\n' && code[i]!='\0') i++;
+        }
+        else if(code[i]=='/' && code[i+1]=='*'){
+            i+=2;
+            while(!(code[i]=='*' && code[i+1]=='/')) i++;
+            i+=2;
+        }
+        else{
+            printf("%c",code[i]);
+            i++;
+        }
+    }
+}
